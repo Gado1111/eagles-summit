@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timer Page</title>
+    <link rel="stylesheet" href="timer.css">
+    
+    <style>
+    .btn-boxed {
+        display: inline-block;
+        padding: 15px 30px;
+        border: 2px solid #ff0000; /* Border color (red, matching your text) */
+        border-radius: 5px; /* Rounded corners */
+        background-color: transparent; /* No background */
+        color: #ff0000; /* Red text color */
+        text-align: center;
+        text-decoration: none;
+        font-size: 18px; /* Adjust font size */
+        font-weight: bold;
+        transition: background-color 0.3s ease, color 0.3s ease; /* Smooth hover effect */
+    }
+    
+    .btn-boxed:hover {
+        background-color: #ff0000; /* Red background on hover */
+        color: #fff; /* White text on hover */
+    }
+    </style>
+    
+</head>
+<body>
+
+    
+   
+        
+    <body>
+        <!-- Red Register Button -->
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLScl5viePYwgSbhe_KXbF-qwL4fUl801IUyClB8m6Qxcn-hbcA/viewform?pli=1" class="register-btn">Register</a>
+    
+        <div class="wrapper"> 
+            
+            <!-- Logo Section -->
+            <div class="logo-container">
+                <a href="#">
+                    <img src="logo1.png" alt="Logo" class="logo-img">
+                </a>
+            </div>
+            
+            <!-- Red Text Section -->
+            <a href="About.html" class="btn-boxed red-text">Step Into Your Greatness</a>
+
+            
+            
+            <!-- Countdown Timer -->
+            <div class="timer">
+                <div class="sub_timer">
+                    <h1 id="day" class="digit">00</h1>
+                    <p class="digit_name">Days</p>
+                </div>
+                <div class="sub_timer">
+                    <h1 id="hour" class="digit">00</h1>
+                    <p class="digit_name">Hours</p>
+                </div>
+                <div class="sub_timer">
+                    <h1 id="min" class="digit">00</h1>
+                    <p class="digit_name">Minutes</p>
+                </div>
+                <div class="sub_timer">
+                    <h1 id="sec" class="digit">00</h1>
+                    <p class="digit_name">Seconds</p>
+                </div>
+            </div>
+        </div>
+    
+        <!-- Javascript Countdown -->
+        <script>
+            // Set target date to November 16th, 2024
+            var target_mili_sec = new Date("November 16, 2024 00:00:00").getTime();
+    
+            function timer() {
+                var now_mili_sec = new Date().getTime();
+                var remaining_sec = Math.floor((target_mili_sec - now_mili_sec) / 1000);
+    
+                // Calculate days, hours, minutes, and seconds
+                var day = Math.floor(remaining_sec / (3600 * 24));
+                var hour = Math.floor((remaining_sec % (3600 * 24)) / 3600);
+                var min = Math.floor((remaining_sec % 3600) / 60);
+                var sec = Math.floor(remaining_sec % 60);
+    
+                // Update the HTML elements with the calculated values
+                document.querySelector("#day").innerHTML = day < 10 ? "0" + day : day;
+                document.querySelector("#hour").innerHTML = hour < 10 ? "0" + hour : hour;
+                document.querySelector("#min").innerHTML = min < 10 ? "0" + min : min;
+                document.querySelector("#sec").innerHTML = sec < 10 ? "0" + sec : sec;
+            }
+    
+            // Call the timer function every second
+            setInterval(timer, 1000);
+        </script>
+    </body>
+    
+    
+</body>
+</html>

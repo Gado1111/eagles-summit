@@ -1,0 +1,97 @@
+.text-right {
+    float: right;
+}
+div#carouselExampleControls a {
+    cursor: pointer;
+}
+.right0 {
+    right: 0;
+    left: unset;
+}
+.carousel-item.west {
+    height: 700px;
+	position: relative;
+}
+.carousel-item.west:before {
+    position: absolute;
+    content: '';
+    background: #00000094;
+    width: 100%;
+    height: 700px;
+}
+.carousel-caption {
+    bottom: 25%;
+}
+input.btn {
+    width: 100%;
+}
+.carousel-indicators.spons {
+    bottom: -52px;
+}
+.carousel.slide.sponsor {
+    overflow: unset;
+}
+.carousel-indicators.spons [data-bs-target] {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+	opacity: 1;
+	background-color: #fff;
+}
+.carousel-indicators.spons .active {
+    opacity: 1;
+    background-color: #de302f;
+}
+.pagination-lg .page-link {
+    padding: 0px 20px;
+}
+
+textarea.form-control {
+    height: auto;
+}
+.hafh {
+    width: 50%;
+}
+.width50-right {
+    max-width: 560px;
+    width: 560px;
+}
+
+@media only screen and (max-width: 575px) {
+html {
+    overflow-x: hidden;
+}
+.banner-tagline {
+    padding-top: 0;
+}
+.modal-dialog {
+    margin: 0 auto;
+}
+.width50-right {
+    max-width: 100%;
+    width: 100%;
+    padding: 0 10px !important;
+}
+.red-overlay {
+    height: 50%;
+    width: 100%;
+}
+.carousel-item.west {
+    height: 400px;
+}
+.carousel-item.west img {
+    height: 400px;
+}
+.container.countdown-tab {
+    margin-top: -40%;
+}
+.newslette-iframe, .subscribe-newsletter {
+    height: auto;
+}
+.mobile-remove {
+    display: none;
+}
+
+}
+
+}

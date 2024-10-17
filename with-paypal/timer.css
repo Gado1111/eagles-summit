@@ -1,0 +1,164 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background: url(neww.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    display: grid;
+    grid-template-columns: 70%;
+    justify-content: center;
+    align-content: center;
+}
+
+.heading {
+    color: #fff;
+    font-size: 40px;
+    font-weight: lighter;
+    text-align: center;
+    letter-spacing: 6px;
+    word-spacing: 6px;
+    margin-bottom: 25px;
+}
+
+.description {
+    color: #bababa;
+    text-align: center;
+    font-size: 15px;
+    letter-spacing: 1px;
+    font-family: Lucida Sans;
+}
+
+.timer {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.sub_timer {
+    width: 180px; /* Reduced width of the timer box */
+    background: red; /* Change background to red */
+    backdrop-filter: blur(20px);
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.digit {
+    color: #fff;
+    font-weight: lighter;
+    font-size: 60px; /* Reduced font size for digits */
+    text-align: center;
+    padding: 1.5rem 0; /* Reduced padding */
+}
+
+.digit_name {
+    color: #fff; /* Change to white for better contrast against red */
+    background: #d32f2f; /* Optional: darken background for the digit name */
+    text-align: center;
+    padding: 0.4rem 0; /* Reduced padding */
+    font-size: 18px; /* Slightly reduced font size */
+}
+
+.logo-container {
+    margin: 20px 0; /* Add some spacing above and below the logo */
+}
+
+.logo-img {
+    max-width: 100%; /* Make the logo responsive */
+    height: auto;    /* Maintain aspect ratio */
+}
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center elements horizontally */
+}
+
+.heading {
+    color: #fff;
+    font-size: 40px;
+    font-weight: lighter;
+    text-align: center;
+    letter-spacing: 6px;
+    word-spacing: 6px;
+    margin-bottom: 10px; /* Reduce the margin below the heading */
+}
+
+.logo-container {
+    margin: 10px 0; /* Reduce margin above and below the logo */
+    text-align: center; /* Center the text inside the container */
+}
+
+.logo-img {
+    max-width: 100%; /* Make the logo responsive */
+    height: auto;    /* Maintain aspect ratio */
+}
+
+.red-text {
+    color: red; /* Beautiful red color */
+    font-size: 30px; /* Adjust font size for visibility */
+    font-weight: bold; /* Make the text bold */
+    text-align: center;
+    margin: 20px 0; /* Add some margin above and below the text */
+    letter-spacing: 2px; /* Slight spacing between letters for elegance */
+}
+
+.timer {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.sub_timer {
+    width: 180px; /* Reduced size for timer boxes */
+    background: red; /* Change background to red */
+    backdrop-filter: blur(20px);
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.digit {
+    color: #fff;
+    font-weight: lighter;
+    font-size: 50px; /* Adjust font size */
+    text-align: center;
+    padding: 1.5rem 0;
+}
+
+.digit_name {
+    color: #fff; /* Change to white for better contrast against red */
+    background: #d32f2f; /* Darken background for the digit name */
+    text-align: center;
+    padding: 0.5rem 0;
+    font-size: 18px; /* Adjust font size */
+}
+
+/* Register Button Styling */
+.register-btn {
+    position: absolute;  /* Position it relative to the page */
+    top: 20px;           /* Distance from the top of the page */
+    right: 20px;         /* Distance from the right edge */
+    background-color: red; /* Red background */
+    color: white;         /* White text */
+    padding: 10px 20px;   /* Padding around the text */
+    font-size: 16px;      /* Adjust the font size */
+    font-weight: bold;    /* Bold text */
+    text-decoration: none; /* Remove underline */
+    border-radius: 5px;   /* Rounded corners */
+    transition: background-color 0.3s ease; /* Smooth hover effect */
+}
+
+/* Hover Effect */
+.register-btn:hover {
+    background-color: darkred; /* Darken the button on hover */
+}
+
+
