@@ -9,11 +9,13 @@
     <link rel="shortcut icon" href="assets/images/favicon-icon/logo1.png">
     
     <style>
-    .btn-boxed {
-        display: inline-block;
-        padding: 15px 30px;
-        border: 2px solid #ff0000; /* Border color (red, matching your text) */
-        border-radius: 5px; /* Rounded corners */
+  .btn-boxed {
+        display: inline-flex;
+        justify-content: center; /* Center text horizontally */
+        align-items: center;    /* Center text vertically */
+        padding: 15px 30px; /* Adjust padding for oval shape */
+        border: 2px solid #ff0000; /* Border color */
+        border-radius: 50px; /* Create an oval shape */
         background-color: transparent; /* No background */
         color: #ff0000; /* Red text color */
         text-align: center;
@@ -21,11 +23,12 @@
         font-size: 18px; /* Adjust font size */
         font-weight: bold;
         transition: background-color 0.3s ease, color 0.3s ease; /* Smooth hover effect */
+        box-sizing: border-box; /* Ensure padding and border don't affect size */
     }
-    
+
     .btn-boxed:hover {
-        background-color: #ff0000; /* Red background on hover */
-        color: #fff; /* White text on hover */
+        background-color: #ff0000; /* Background color on hover */
+        color: white; /* Text color on hover */
     }
     </style>
     
@@ -49,7 +52,7 @@
             </div>
             
             <!-- Red Text Section -->
-            <a href="About.html" class="btn-boxed red-text">Step Into Your Greatness</a>
+            <a href="About.html" class="btn-boxed red-text">Learn More</a>
 
             
             
